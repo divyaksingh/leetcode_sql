@@ -1,4 +1,7 @@
 # Write your MySQL query statement below
-#select unique_id, name from EmployeeUNI inner join Employees on EmployeeUNI.id = Employees.id
+#Attempt2
+select e1.unique_id, e2.name from EmployeeUNI e1 right join Employees e2 on e1.id=e2.id
 
-select EmployeeUNI.unique_id, Employees.name from Employees left outer join EmployeeUNI on Employees.id = EmployeeUNI.id
+
+#Attempt1
+-- select EmployeeUNI.unique_id, Employees.name from Employees left outer join EmployeeUNI on Employees.id = EmployeeUNI.id
